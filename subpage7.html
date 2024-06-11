@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多欄位版面設計</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>多欄位版面設計</h1>
+
+<div class="container">
+    <div class="column">
+        <img src="柯基.jpg" alt="柯基">
+        <h2>狗狗</h2>
+        <p>你好!我是一隻柯基。</p>
+    </div>
+
+    <div class="column">
+        <img src="小橘貓.jpg" alt="小橘貓">
+        <h2>貓咪</h2>
+        <p>你好!我是一隻小橘貓。</p>
+    </div>
+
+    <div class="column">
+        <img src="垂耳兔.jpg" alt="垂耳兔">
+        <h2>兔兔</h2>
+        <p>你好!我是一隻垂耳兔。</p>
+    </div>
+</div>
+
+</body>
+</html>
